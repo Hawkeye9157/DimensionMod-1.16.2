@@ -1,5 +1,6 @@
 package com.thinktank.dimensionmod;
 
+import com.thinktank.dimensionmod.init.BlockInit;
 import com.thinktank.dimensionmod.init.ItemInit;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -34,6 +35,7 @@ public class DimensionMod
         modEventBus.addListener(this::setup);
 
         ItemInit.ITEMS.register(modEventBus);
+        BlockInit.BLOCKS.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
