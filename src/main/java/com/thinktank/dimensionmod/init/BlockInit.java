@@ -39,7 +39,7 @@ public class BlockInit { //Initializes our custom blocks
 
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, DimensionMod.MOD_ID);
 
-    public static final RegistryObject<Block> EXAMPLE_BLOCK = BLOCKS.register("example-block",
+    public static final RegistryObject<Block> EXAMPLE_BLOCK = BLOCKS.register("maple",
             () -> new Block(AbstractBlock.Properties.of(Material.STONE).strength(4f,1200f).harvestLevel(2)
                     .harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops().lightLevel((state) -> 15)));
 }
