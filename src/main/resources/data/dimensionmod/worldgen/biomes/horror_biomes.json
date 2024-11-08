@@ -1,0 +1,23 @@
+{
+  "surface_builder": "minecraft:eroded_badlands",
+  "depth": 10,
+  "scale": 3,
+  "temperature": 0.8,
+  "downfall": 0.4,
+  "precipitation": "none",
+  "temperature_modifier": "none",
+  "category": "none",
+  "player_spawn_friendly": false,
+  "effects": {
+    "sky_color": 1381397,
+    "fog_color": 12638463,
+    "water_color": 2297427,
+    "water_fog_color": 329011,
+    "grass_color": 6303535
+  },
+  "starts": [],
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {},
+  "features": []
+}
