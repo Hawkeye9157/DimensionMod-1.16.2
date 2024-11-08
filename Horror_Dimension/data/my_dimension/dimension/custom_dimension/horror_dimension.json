@@ -1,0 +1,19 @@
+
+{
+  "type": "my_dimension:overworld",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "minecraft:plains",
+      "layers": [
+        {
+          "block": "dimensionmod:maple",
+          "height": 64
+        }
+      ],
+      "structures": {
+        "structures": {}
+      }
+    }
+  }
+}
