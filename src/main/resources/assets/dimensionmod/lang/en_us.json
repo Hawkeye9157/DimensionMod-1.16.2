@@ -1,4 +1,5 @@
 {
     "itemGroup.dimensionmod": "Dimension mod Items",
-    "item.dimensionmod.example": "example"
+    "item.dimensionmod.example": "example",
+    "block.dimensionmod.example_block": "maple"
 }
