@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "   ",
+        "# #",
+        "# #"
+    ],
+    "key": {
+        "#":{
+            "item":"dimensionmod:cursed_sapphire"
+        }
+    },
+    "result": {
+        "item": "dimensionmod:sapphire_boots"
+    }
+}
