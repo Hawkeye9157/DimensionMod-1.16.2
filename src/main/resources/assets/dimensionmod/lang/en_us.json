@@ -1,5 +1,10 @@
 {
     "itemGroup.dimensionmod": "Dimension mod Items",
     "item.dimensionmod.example": "example",
+    "item.dimensionmod.cursed_sapphire": "cursed_sapphire",
+    "item.dimensionmod.sapphire_helmet": "sapphire_helmet",
+    "item.dimensionmod.sapphire_chestplate":"sapphire_chestplate",
+    "item.dimensionmod.sapphire_leggings": "sapphire_leggings",
+    "item.dimensionmod.sapphire_boots": "sapphire_boots",
     "block.dimensionmod.example_block": "maple"
 }

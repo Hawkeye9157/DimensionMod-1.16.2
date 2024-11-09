@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        " / ",
+        " / "
+    ],
+    "key": {
+        "#":{
+            "item":"dimensionmod:tentacle"
+        },
+        "/":{
+            "item": "minecraft:stick"
+        }
+    },
+    "result":{
+        "item": "dimensionmod:tentacle_shovel"
+    }
+}
