@@ -6,7 +6,7 @@
       "type": "minecraft:multi_noise",
       "biomes":[
         {
-          "biome": "ice_spikes",
+          "biome": "dimensionmod:horror_biomes",
           "parameters":{
             "altitude": -0.8,
             "humidity": 0.5,
@@ -16,7 +16,7 @@
           }
         },
         {
-          "biome": "snowy_tundra",
+          "biome": "dimensionmod:horror_biomes",
           "parameters":{
             "altitude": -1,
             "humidity": 0.5,
@@ -26,7 +26,7 @@
           }
         },
         {
-          "biome": "frozen_river",
+          "biome": "dimensionmod:horror_biomes",
           "parameters":{
             "altitude": 0,
             "humidity": 1,
@@ -36,7 +36,7 @@
           }
         },
         {
-          "biome": "frozen_ocean",
+          "biome": "dimensionmod:horror_biomes",
           "parameters":{
             "altitude": 0,
             "humidity": 1,
@@ -76,7 +76,7 @@
       }
     },
     "seed": 0,
-    "settings": "minecraft:overworld",
+    "settings": "dimensionmod:horror_noise_settings",
     "type": "minecraft:noise"
   }
 }

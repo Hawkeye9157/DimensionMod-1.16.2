@@ -1,0 +1,45 @@
+{
+  "bedrock_roof_position": -10,
+  "bedrock_floor_position": 0,
+  "sea_level": 50,
+  "disable_mob_generation": false,
+  "default_block": {
+    "Name": "dimensionmod:maple"
+  },
+  "default_fluid": {
+    "Name": "minecraft:water",
+    "Properties": {
+      "level": "0"
+    }
+  },
+  "noise": {
+    "height": 150,
+    "density_factor": 0.85,
+    "density_offset": -0.46875,
+    "size_horizontal": 1,
+    "size_vertical": 2,
+    "simplex_surface_noise": true,
+    "random_density_offset": true,
+    "island_noise_override": false,
+    "amplified": true,
+    "sampling": {
+      "xz_scale": 0.9999999814507745,
+      "y_scale": 0.9599999814507345,
+      "xz_factor": 160,
+      "y_factor": 80
+    },
+    "bottom_slide": {
+      "target": -30,
+      "size": 4,
+      "offset": 0
+    },
+    "top_slide": {
+      "target": -10,
+      "size": 2,
+      "offset": 0
+    }
+  },
+  "structures": {
+    "structures": {}
+  }
+}
