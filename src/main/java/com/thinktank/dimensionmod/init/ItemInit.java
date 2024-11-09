@@ -7,10 +7,10 @@
 package com.thinktank.dimensionmod.init;
 
 import com.thinktank.dimensionmod.DimensionMod;
-import net.minecraft.item.Food;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
+import com.thinktank.dimensionmod.Util.ModArmorMaterial;
+import com.thinktank.dimensionmod.Util.ModItemTier;
+import net.minecraft.inventory.EquipmentSlotType;
+import net.minecraft.item.*;
 import net.minecraft.potion.Effect;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
@@ -32,8 +32,35 @@ public class ItemInit { //Initializes our custom Items
                             .effect(() -> new EffectInstance(Effects.MOVEMENT_SPEED,2000,0),15.0F)
                             .effect(() -> new EffectInstance(Effects.JUMP,2000,0),15.0F).build())));
     //default item creation
-    public static final RegistryObject<Item> Gun = ITEMS.register("gun",
+    public static final RegistryObject<Item> Tentacle = ITEMS.register("tentacle",
             () -> new Item(new Item.Properties().tab(ModCreativeTab.instance)));
+    public static final RegistryObject<Item> CursedSapphire = ITEMS.register("cursed_sapphire",
+            () -> new Item(new Item.Properties().tab(ModCreativeTab.instance)));
+    public static final RegistryObject<Item> Nail = ITEMS.register("nail",
+            () -> new Item(new Item.Properties().tab(ModCreativeTab.instance)));
+
+    //custom tools
+    public static final RegistryObject<Item> TENT_SWORD = ITEMS.register("tentacle_sword",
+            () -> new SwordItem(ModItemTier.TENT,3,-2.4f,new Item.Properties().tab(ModCreativeTab.instance)));
+    public static final RegistryObject<Item> TENT_PICK = ITEMS.register("tentacle_pickaxe",
+            () -> new PickaxeItem(ModItemTier.TENT,3,-2.4f,new Item.Properties().tab(ModCreativeTab.instance)));
+    public static final RegistryObject<Item> TENT_AXE = ITEMS.register("tentacle_axe",
+            () -> new AxeItem(ModItemTier.TENT,3,-2.4f,new Item.Properties().tab(ModCreativeTab.instance)));
+    public static final RegistryObject<Item> TENT_SHOVEL = ITEMS.register("tentacle_shovel",
+            () -> new ShovelItem(ModItemTier.TENT,3,-2.4f,new Item.Properties().tab(ModCreativeTab.instance)));
+    public static final RegistryObject<Item> TENT_HOE = ITEMS.register("tentacle_hoe",
+            () -> new HoeItem(ModItemTier.TENT,3,-2.4f,new Item.Properties().tab(ModCreativeTab.instance)));
+
+    //custom armor
+    public static final RegistryObject<Item> SAPPHIRE_HELMET = ITEMS.register("sapphire_helmet",
+            () -> new ArmorItem(ModArmorMaterial.SAPPHIRE, EquipmentSlotType.HEAD, new Item.Properties().tab(ModCreativeTab.instance)));
+    public static final RegistryObject<Item> SAPPHIRE_CHESTPLATE = ITEMS.register("sapphire_chestplate",
+            () -> new ArmorItem(ModArmorMaterial.SAPPHIRE, EquipmentSlotType.CHEST, new Item.Properties().tab(ModCreativeTab.instance)));
+    public static final RegistryObject<Item> SAPPHIRE_LEGGINGS = ITEMS.register("sapphire_leggings",
+            () -> new ArmorItem(ModArmorMaterial.SAPPHIRE, EquipmentSlotType.LEGS, new Item.Properties().tab(ModCreativeTab.instance)));
+    public static final RegistryObject<Item> SAPPHIRE_BOOTS = ITEMS.register("sapphire_boots",
+            () -> new ArmorItem(ModArmorMaterial.SAPPHIRE, EquipmentSlotType.FEET, new Item.Properties().tab(ModCreativeTab.instance)));
+
 
     //creating creative tab with our items
     public static class ModCreativeTab extends ItemGroup {
