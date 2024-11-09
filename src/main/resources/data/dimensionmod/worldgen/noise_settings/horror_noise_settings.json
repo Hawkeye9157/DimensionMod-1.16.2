@@ -13,24 +13,24 @@
     }
   },
   "noise": {
-    "height": 150,
+    "height": 75,
     "density_factor": 0.85,
     "density_offset": -0.46875,
     "size_horizontal": 1,
     "size_vertical": 2,
-    "simplex_surface_noise": true,
+    "simplex_surface_noise": false,
     "random_density_offset": true,
     "island_noise_override": false,
     "amplified": true,
     "sampling": {
       "xz_scale": 0.9999999814507745,
-      "y_scale": 0.9599999814507345,
+      "y_scale": 0.9999999999450734,
       "xz_factor": 160,
       "y_factor": 80
     },
     "bottom_slide": {
       "target": -30,
-      "size": 4,
+      "size": 2,
       "offset": 0
     },
     "top_slide": {

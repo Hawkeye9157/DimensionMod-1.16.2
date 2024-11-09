@@ -1,5 +1,5 @@
 {
-  "surface_builder": "minecraft:grass",
+  "surface_builder": "dimensionmod:horror_surface_builder",
   "depth": 10,
   "scale": 3,
   "temperature": 0.8,

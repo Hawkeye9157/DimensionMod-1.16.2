@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:default",
+  "config": {
+    "top_material": {
+      "Name": "dimensionmod:maple",
+      "Properties": {
+        "snowy": "false"
+      }
+    },
+    "under_material": {
+      "Name": "dimensionmod:maple"
+    },
+    "underwater_material": {
+      "Name": "dimensionmod:maple"
+    }
+  }
+}
