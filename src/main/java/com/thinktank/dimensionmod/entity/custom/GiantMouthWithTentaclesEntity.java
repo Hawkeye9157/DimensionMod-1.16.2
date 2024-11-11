@@ -36,6 +36,7 @@ public class GiantMouthWithTentaclesEntity extends EndermanEntity {
     @Override
     public void registerGoals(){
         super.registerGoals();
+        //add custom behavior here
     }
     @Override
     protected int getExperienceReward(PlayerEntity player) {return 3;}
