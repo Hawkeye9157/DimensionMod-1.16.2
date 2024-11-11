@@ -9,6 +9,7 @@ package com.thinktank.dimensionmod.init;
 import com.thinktank.dimensionmod.DimensionMod;
 import com.thinktank.dimensionmod.Util.ModArmorMaterial;
 import com.thinktank.dimensionmod.Util.ModItemTier;
+import com.thinktank.dimensionmod.Util.SapphireArmorItem;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
 import net.minecraft.potion.Effect;
@@ -53,13 +54,13 @@ public class ItemInit { //Initializes our custom Items
 
     //custom armor
     public static final RegistryObject<Item> SAPPHIRE_HELMET = ITEMS.register("sapphire_helmet",
-            () -> new ArmorItem(ModArmorMaterial.SAPPHIRE, EquipmentSlotType.HEAD, new Item.Properties().tab(ModCreativeTab.instance)));
+            () -> new SapphireArmorItem(ModArmorMaterial.SAPPHIRE, EquipmentSlotType.HEAD, new Item.Properties().tab(ModCreativeTab.instance)));
     public static final RegistryObject<Item> SAPPHIRE_CHESTPLATE = ITEMS.register("sapphire_chestplate",
-            () -> new ArmorItem(ModArmorMaterial.SAPPHIRE, EquipmentSlotType.CHEST, new Item.Properties().tab(ModCreativeTab.instance)));
+            () -> new SapphireArmorItem(ModArmorMaterial.SAPPHIRE, EquipmentSlotType.CHEST, new Item.Properties().tab(ModCreativeTab.instance)));
     public static final RegistryObject<Item> SAPPHIRE_LEGGINGS = ITEMS.register("sapphire_leggings",
-            () -> new ArmorItem(ModArmorMaterial.SAPPHIRE, EquipmentSlotType.LEGS, new Item.Properties().tab(ModCreativeTab.instance)));
+            () -> new SapphireArmorItem(ModArmorMaterial.SAPPHIRE, EquipmentSlotType.LEGS, new Item.Properties().tab(ModCreativeTab.instance)));
     public static final RegistryObject<Item> SAPPHIRE_BOOTS = ITEMS.register("sapphire_boots",
-            () -> new ArmorItem(ModArmorMaterial.SAPPHIRE, EquipmentSlotType.FEET, new Item.Properties().tab(ModCreativeTab.instance)));
+            () -> new SapphireArmorItem(ModArmorMaterial.SAPPHIRE, EquipmentSlotType.FEET, new Item.Properties().tab(ModCreativeTab.instance)));
 
 
     //creating creative tab with our items
