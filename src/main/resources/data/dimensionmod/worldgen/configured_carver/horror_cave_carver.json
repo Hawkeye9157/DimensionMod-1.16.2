@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:cave",
+  "config": {
+    "probability": 0.3,
+    "y": {
+      "type": "minecraft:constant",
+      "value": {
+        "above_bottom": 75
+      }
+    },
+    "yScale": 5,
+    "lava_level": {
+      "absolute": 10
+    },
+    "aquifers_enabled": true,
+    "horizontal_radius_multiplier": 1,
+    "vertical_radius_multiplier": 1,
+    "floor_level": 0
+  }
+}
