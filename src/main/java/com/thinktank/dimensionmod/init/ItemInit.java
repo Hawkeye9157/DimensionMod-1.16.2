@@ -26,13 +26,13 @@ public class ItemInit { //Initializes our custom Items
     //Creates a register of our Items
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, DimensionMod.MOD_ID);
 
-    //Creates an Item
+    //Creates a food Item
     public static final RegistryObject<Item> Example = ITEMS.register("example",
             () -> new Item(new Item.Properties().tab(ModCreativeTab.instance)
                     .food(new Food.Builder().nutrition(4).saturationMod(0.6f)
                             .effect(() -> new EffectInstance(Effects.MOVEMENT_SPEED,2000,0),15.0F)
                             .effect(() -> new EffectInstance(Effects.JUMP,2000,0),15.0F).build())));
-    //default item creation
+    //default item/material creation
     public static final RegistryObject<Item> Tentacle = ITEMS.register("tentacle",
             () -> new Item(new Item.Properties().tab(ModCreativeTab.instance)));
     public static final RegistryObject<Item> CursedSapphire = ITEMS.register("cursed_sapphire",
