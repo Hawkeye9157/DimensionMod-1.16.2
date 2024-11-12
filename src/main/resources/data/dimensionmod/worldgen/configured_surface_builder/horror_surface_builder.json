@@ -2,7 +2,7 @@
   "type": "minecraft:default",
   "config": {
     "top_material": {
-      "Name": "minecraft:dirt",
+      "Name": "minecraft:maple",
       "Properties": {
         "snowy": "false"
       }

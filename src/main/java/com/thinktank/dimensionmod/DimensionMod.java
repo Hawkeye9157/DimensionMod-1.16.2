@@ -29,7 +29,6 @@ import net.minecraft.*;
 
 import java.util.Map;
 import java.util.stream.Collectors;
-
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(DimensionMod.MOD_ID)
 public class DimensionMod
@@ -37,8 +36,6 @@ public class DimensionMod
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "dimensionmod";
-
-
 
     public DimensionMod() {
         final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
@@ -57,6 +54,7 @@ public class DimensionMod
         // some preinit code
         LOGGER.info("HELLO FROM PREINIT");
         LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
+
     }
 
 

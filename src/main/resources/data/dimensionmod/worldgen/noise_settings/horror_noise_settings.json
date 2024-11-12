@@ -4,16 +4,16 @@
   "sea_level": 50,
   "disable_mob_generation": false,
   "default_block": {
-    "Name": "dimensionmod:maple"
+    "Name": "minecraft:stone"
   },
   "default_fluid": {
-    "Name": "minecraft:lava",
+    "Name": "minecraft:water",
     "Properties": {
       "level": "0"
     }
   },
   "noise": {
-    "height": 75,
+    "height": 100,
     "density_factor": 1.1,
     "density_offset": -0.46875,
     "size_horizontal": 1,
