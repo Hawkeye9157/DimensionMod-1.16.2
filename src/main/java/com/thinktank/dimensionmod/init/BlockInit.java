@@ -7,8 +7,11 @@
 package com.thinktank.dimensionmod.init;
 
 import com.thinktank.dimensionmod.DimensionMod;
+import com.thinktank.dimensionmod.ore.CursedOre;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.OreBlock;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -42,4 +45,8 @@ public class BlockInit { //Initializes our custom blocks
     public static final RegistryObject<Block> EXAMPLE_BLOCK = BLOCKS.register("maple",
             () -> new Block(AbstractBlock.Properties.of(Material.GLASS).strength(4f,1200f).harvestLevel(2)
                     .harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops().lightLevel((state) -> 15)));
+
+    public static final RegistryObject<Block> CURSED_ORE = BLOCKS.register("cursed_ore",
+            () -> new CursedOre(AbstractBlock.Properties.of(Material.STONE).strength(2f,600f).harvestLevel(2)
+                    .harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops()));
 }
