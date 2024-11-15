@@ -1,6 +1,6 @@
 {
-  "type": "minecraft:cave",
+  "type": "minecraft:canyon",
   "config": {
-    "probability": 0.8
+    "probability": 0.9999
   }
 }
