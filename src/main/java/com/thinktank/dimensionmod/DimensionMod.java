@@ -1,6 +1,7 @@
 package com.thinktank.dimensionmod;
 
 import com.thinktank.dimensionmod.entity.ModEntityType;
+import com.thinktank.dimensionmod.entity.render.VineSpiritRenderer;
 import com.thinktank.dimensionmod.init.BlockInit;
 import com.thinktank.dimensionmod.init.DimensionInit;
 import com.thinktank.dimensionmod.init.ItemInit;
@@ -17,7 +18,9 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.InterModComms;
 import net.minecraftforge.fml.RegistryObject;
+import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -59,6 +62,9 @@ public class DimensionMod
         LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
     }
 
+    private void DoClientStuff(final FMLClientSetupEvent event){
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityType.DA_BOI.get(), VineSpiritRenderer::new);
+    }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
