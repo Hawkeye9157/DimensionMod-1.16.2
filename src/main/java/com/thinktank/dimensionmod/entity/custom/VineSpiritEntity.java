@@ -15,6 +15,7 @@ import net.minecraft.entity.ai.attributes.AttributeModifierMap;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.merchant.villager.AbstractVillagerEntity;
+import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.monster.ZombieEntity;
 import net.minecraft.entity.passive.IronGolemEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -27,8 +28,8 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
 
-public class VineSpiritEntity extends ZombieEntity {
-    public VineSpiritEntity(EntityType<? extends ZombieEntity> type, World worldIn) {
+public class VineSpiritEntity extends MonsterEntity {
+    public VineSpiritEntity(EntityType<? extends MonsterEntity> type, World worldIn) {
         super(type, worldIn);
     }
     public static AttributeModifierMap.MutableAttribute createAttributes() {
@@ -39,7 +40,7 @@ public class VineSpiritEntity extends ZombieEntity {
     public void registerGoals() {
         super.registerGoals();
         this.goalSelector.addGoal(1, new NearestAttackableTargetGoal<>(this, PlayerEntity.class, true));
-        this.goalSelector.addGoal(2, new ZombieAttackGoal(this, 1.0D, false));
+        //this.goalSelector.addGoal(2, new ZombieAttackGoal(this, 1.0D, false));
         this.goalSelector.addGoal(3, new WaterAvoidingRandomWalkingGoal(this, 1.0D));
         this.targetSelector.addGoal(1, new HurtByTargetGoal(this));
         this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, PlayerEntity.class, true));

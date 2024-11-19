@@ -40,6 +40,12 @@
     }
   },
   "structures": {
-    "structures": {}
+    "structures": {
+      "minecraft:pillager_outpost":{
+        "spacing": 32,
+        "separation": 8,
+        "salt": 165745296
+      }
+    }
   }
 }

@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:pillager_outpost",
+  "config": {
+    "start_pool": "dimensionmod:witches_cottage",
+    "size": 6
+  }
+}
