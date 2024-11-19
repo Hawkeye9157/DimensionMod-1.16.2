@@ -30,6 +30,7 @@ public class ceiling_mouth extends EntityModel<Entity> {
 
 		Mouth = new ModelRenderer(this);
 		Mouth.setPos(0.0F, 24.0F, 0.0F);
+		setRotationAngle(Mouth, 0.0F, 3.1416F, 0.0F);
 		
 
 		Lips = new ModelRenderer(this);
@@ -67,6 +68,7 @@ public class ceiling_mouth extends EntityModel<Entity> {
 
 		Base = new ModelRenderer(this);
 		Base.setPos(0.0F, 24.0F, 0.0F);
+		setRotationAngle(Base, 0.0F, 3.1416F, 0.0F);
 		Base.texOffs(0, 0).addBox(-13.0F, -2.0F, -8.0F, 26.0F, 2.0F, 16.0F, 0.0F, false);
 
 		Tentacles = new ModelRenderer(this);
