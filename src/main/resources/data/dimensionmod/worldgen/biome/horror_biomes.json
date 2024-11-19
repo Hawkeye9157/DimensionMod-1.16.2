@@ -18,6 +18,21 @@
   "starts": [],
   "spawners": {},
   "spawn_costs": {},
-  "carvers": {},
-  "features": []
+  "carvers": {
+    "air": [
+      "dimensionmod:horror_canyon_carver"
+    ]
+  },
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    []
+  ]
 }
+
+
+
+
+

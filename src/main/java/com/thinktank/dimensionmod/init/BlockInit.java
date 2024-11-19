@@ -36,6 +36,7 @@ public class BlockInit { //Initializes our custom blocks
             blockItem.setRegistryName(block.getRegistryName());
             registry.register(blockItem);
         });
+
     }
 
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, DimensionMod.MOD_ID);

@@ -12,6 +12,7 @@ import net.minecraft.entity.ai.attributes.AttributeModifierMap;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.merchant.villager.AbstractVillagerEntity;
+import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.monster.ZombieEntity;
 import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.passive.FoxEntity;
@@ -29,8 +30,10 @@ import net.minecraft.world.server.ServerWorld;
 import javax.annotation.Nullable;
 
 
+
 public class VineSpiritEntity extends AnimalEntity {
     public VineSpiritEntity(EntityType<? extends AnimalEntity> type, World worldIn) {
+
         super(type, worldIn);
     }
     public static AttributeModifierMap.MutableAttribute createAttributes() {

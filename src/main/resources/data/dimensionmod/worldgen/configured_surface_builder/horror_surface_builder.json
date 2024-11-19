@@ -2,7 +2,7 @@
   "type": "minecraft:default",
   "config": {
     "top_material": {
-      "Name": "dimensionmod:maple",
+      "Name": "minecraft:maple",
       "Properties": {
         "snowy": "false"
       }
