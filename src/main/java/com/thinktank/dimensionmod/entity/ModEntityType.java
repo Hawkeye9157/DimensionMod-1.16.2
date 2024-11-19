@@ -8,6 +8,7 @@ package com.thinktank.dimensionmod.entity;
 
 import com.thinktank.dimensionmod.DimensionMod;
 
+import com.thinktank.dimensionmod.entity.custom.GiantMouthWithTentaclesEntity;
 import com.thinktank.dimensionmod.entity.custom.VineSpiritEntity;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
@@ -20,10 +21,12 @@ import net.minecraftforge.registries.ForgeRegistries;
 public class ModEntityType {
     public static DeferredRegister<EntityType<?>> ENTITY_TYPES = DeferredRegister.create(ForgeRegistries.ENTITIES, DimensionMod.MOD_ID);
 
-    public static final RegistryObject<EntityType<VineSpiritEntity>> BUFF = ENTITY_TYPES.register("vinespirit",
-            () -> EntityType.Builder.of(VineSpiritEntity::new,EntityClassification.MONSTER).sized(1.0f,0.5f)
+    public static final RegistryObject<EntityType<VineSpiritEntity>> DA_BOI = ENTITY_TYPES.register("vinespirit",
+            () -> EntityType.Builder.of(VineSpiritEntity::new,EntityClassification.MONSTER).sized(1.0f,1.0f)
                     .build(new ResourceLocation(DimensionMod.MOD_ID,"vinespirit").toString()));
-
+    public static final RegistryObject<EntityType<GiantMouthWithTentaclesEntity>> SQUIDWARD = ENTITY_TYPES.register("squidward",
+            () -> EntityType.Builder.of(GiantMouthWithTentaclesEntity::new,EntityClassification.MONSTER).sized(1.0f,1.0f)
+                    .build(new ResourceLocation(DimensionMod.MOD_ID,"squidward").toString()));
 
 
     public static void Register(IEventBus eventBus) {
