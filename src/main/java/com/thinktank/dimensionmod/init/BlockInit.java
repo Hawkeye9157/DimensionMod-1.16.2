@@ -15,6 +15,7 @@ import net.minecraft.block.OreBlock;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraftforge.client.model.obj.MaterialLibrary;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -38,12 +39,13 @@ public class BlockInit { //Initializes our custom blocks
             blockItem.setRegistryName(block.getRegistryName());
             registry.register(blockItem);
         });
+
     }
 
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, DimensionMod.MOD_ID);
 
     public static final RegistryObject<Block> EXAMPLE_BLOCK = BLOCKS.register("maple",
-            () -> new Block(AbstractBlock.Properties.of(Material.GLASS).strength(4f,1200f).harvestLevel(2)
+            () -> new Block(AbstractBlock.Properties.of(Material.STONE).strength(4f,1200f).harvestLevel(2)
                     .harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops().lightLevel((state) -> 15)));
 
     public static final RegistryObject<Block> CURSED_ORE = BLOCKS.register("cursed_ore",

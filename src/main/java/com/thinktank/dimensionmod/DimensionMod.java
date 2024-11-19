@@ -1,6 +1,7 @@
 package com.thinktank.dimensionmod;
 
 import com.thinktank.dimensionmod.entity.ModEntityType;
+import com.thinktank.dimensionmod.entity.render.VineSpiritRenderer;
 import com.thinktank.dimensionmod.init.BlockInit;
 import com.thinktank.dimensionmod.init.DimensionInit;
 import com.thinktank.dimensionmod.init.ItemInit;
@@ -17,7 +18,9 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.InterModComms;
 import net.minecraftforge.fml.RegistryObject;
+import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -29,7 +32,6 @@ import net.minecraft.*;
 
 import java.util.Map;
 import java.util.stream.Collectors;
-
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(DimensionMod.MOD_ID)
 public class DimensionMod
@@ -38,8 +40,6 @@ public class DimensionMod
     private static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "dimensionmod";
 
-
-
     public DimensionMod() {
         final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         // Register the setup method for modloading
@@ -47,6 +47,7 @@ public class DimensionMod
         ItemInit.ITEMS.register(modEventBus);
         BlockInit.BLOCKS.register(modEventBus);
         ModEntityType.ENTITY_TYPES.register(modEventBus);
+
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
@@ -57,8 +58,12 @@ public class DimensionMod
         // some preinit code
         LOGGER.info("HELLO FROM PREINIT");
         LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
+
     }
 
+    private void DoClientStuff(final FMLClientSetupEvent event){
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityType.DA_BOI.get(), VineSpiritRenderer::new);
+    }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent

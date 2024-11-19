@@ -20,11 +20,16 @@
   "spawn_costs": {},
   "carvers": {
     "air": [
-      "minecraft:cave",
-      "minecraft:canyon"
+      "dimensionmod:horror_canyon_carver"
     ]
   },
-  "features": []
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    []
+  ]
 }
 
 

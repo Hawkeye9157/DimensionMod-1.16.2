@@ -4,7 +4,7 @@
   "sea_level": 50,
   "disable_mob_generation": false,
   "default_block": {
-    "Name": "dimensionmod:maple"
+    "Name": "minecraft:stone"
   },
   "default_fluid": {
     "Name": "minecraft:water",
@@ -13,7 +13,7 @@
     }
   },
   "noise": {
-    "height": 75,
+    "height": 100,
     "density_factor": 1.1,
     "density_offset": -0.46875,
     "size_horizontal": 1,
@@ -40,6 +40,12 @@
     }
   },
   "structures": {
-    "structures": {}
+    "structures": {
+      "minecraft:pillager_outpost":{
+        "spacing": 32,
+        "separation": 8,
+        "salt": 165745296
+      }
+    }
   }
 }

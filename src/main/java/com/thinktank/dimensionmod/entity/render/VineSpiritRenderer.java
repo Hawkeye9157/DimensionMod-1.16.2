@@ -16,9 +16,9 @@ import net.minecraft.util.ResourceLocation;
 public class VineSpiritRenderer extends MobRenderer<VineSpiritEntity, VineSpiritModel<VineSpiritEntity>> {
 
     protected static final ResourceLocation TEXTURE = new ResourceLocation(DimensionMod.MOD_ID,
-            "textures/entity/vinespirit/vinespirit.png");
+            "textures/entity/vinespirit.png");
     public VineSpiritRenderer(EntityRendererManager manager) {
-        super(manager, new VineSpiritModel(), 0.7F);
+        super(manager, new VineSpiritModel<>(), 0.2F);
     }
 
 

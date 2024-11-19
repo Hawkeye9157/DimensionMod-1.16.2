@@ -21,8 +21,6 @@ import net.minecraftforge.registries.RegistryManager;
 
 
 public class DimensionInit {
-
-
     public static final RegistryKey<Dimension> ExampleWorld  = RegistryKey.create(Registry.LEVEL_STEM_REGISTRY,
             new ResourceLocation("example_world"));
 
