@@ -51,6 +51,7 @@ public class DimensionMod
         BlockInit.BLOCKS.register(modEventBus);
         ModEntityType.ENTITY_TYPES.register(modEventBus);
 
+
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
     }
