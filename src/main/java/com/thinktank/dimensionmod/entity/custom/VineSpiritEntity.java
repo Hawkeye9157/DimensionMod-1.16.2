@@ -32,12 +32,10 @@ import javax.annotation.Nullable;
 public class VineSpiritEntity extends AnimalEntity {
     public VineSpiritEntity(EntityType<? extends AnimalEntity> type, World worldIn) {
         super(type, worldIn);
-        createAttributes();
-        
     }
     public static AttributeModifierMap.MutableAttribute createAttributes() {
-        return MobEntity.createMobAttributes().add(Attributes.MAX_HEALTH, 20.0d).add(Attributes.MOVEMENT_SPEED, 0.3d)
-                .add(Attributes.ATTACK_DAMAGE,13.0d).add(Attributes.FOLLOW_RANGE,50.0d);
+        return MobEntity.createMobAttributes().add(Attributes.MAX_HEALTH, 20.0d).add(Attributes.MOVEMENT_SPEED, 1.3d)
+                .add(Attributes.ATTACK_DAMAGE,13.0d);
     }
     @Override
     public void registerGoals() {
