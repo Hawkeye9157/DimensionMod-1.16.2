@@ -12,6 +12,10 @@ import com.thinktank.dimensionmod.entity.custom.GiantMouthWithTentaclesEntity;
 import net.minecraft.client.renderer.entity.model.EntityModel;
 
 public class GiantMouthWithTentaclesModel <T extends GiantMouthWithTentaclesEntity> extends EntityModel<T> {
+
+    
+
+
     @Override
     public void setupAnim(T t, float v, float v1, float v2, float v3, float v4) {
 
