@@ -6,6 +6,9 @@
  */
 package com.thinktank.dimensionmod.entity.custom;
 
+import com.thinktank.dimensionmod.DimensionMod;
+import com.thinktank.dimensionmod.init.DimensionInit;
+import com.thinktank.dimensionmod.init.ItemInit;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.*;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
@@ -33,12 +36,11 @@ import javax.annotation.Nullable;
 
 public class VineSpiritEntity extends AnimalEntity {
     public VineSpiritEntity(EntityType<? extends AnimalEntity> type, World worldIn) {
-
         super(type, worldIn);
     }
     public static AttributeModifierMap.MutableAttribute createAttributes() {
-        return MobEntity.createMobAttributes().add(Attributes.MAX_HEALTH, 20.0d).add(Attributes.MOVEMENT_SPEED, 1.3d)
-                .add(Attributes.ATTACK_DAMAGE,13.0d);
+        return MobEntity.createMobAttributes().add(Attributes.MAX_HEALTH, 10.0d)
+                .add(Attributes.MOVEMENT_SPEED, 1.0d);
     }
     @Override
     public void registerGoals() {
