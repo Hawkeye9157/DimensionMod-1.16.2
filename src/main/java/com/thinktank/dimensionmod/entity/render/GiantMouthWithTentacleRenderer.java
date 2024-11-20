@@ -17,7 +17,7 @@ import net.minecraft.util.ResourceLocation;
 public class GiantMouthWithTentacleRenderer extends MobRenderer<GiantMouthWithTentaclesEntity, GiantMouthWithTentaclesModel<GiantMouthWithTentaclesEntity>>{
 
     protected static final ResourceLocation TEXTURE = new ResourceLocation(DimensionMod.MOD_ID,
-            "textures/entity/giantmouthwithtentacle/giantmouthwithtentacle.png");
+            "textures/entity/squidward.png");
     public GiantMouthWithTentacleRenderer(EntityRendererManager manager) {
         super (manager, new GiantMouthWithTentaclesModel(), 0.7f);
     }
