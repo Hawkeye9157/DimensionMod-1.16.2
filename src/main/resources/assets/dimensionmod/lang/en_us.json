@@ -6,5 +6,9 @@
     "item.dimensionmod.sapphire_chestplate":"sapphire_chestplate",
     "item.dimensionmod.sapphire_leggings": "sapphire_leggings",
     "item.dimensionmod.sapphire_boots": "sapphire_boots",
-    "block.dimensionmod.example_block": "maple"
+    "block.dimensionmod.example_block": "maple",
+    "block.dimensionmod.cursed_ore": "cursed_ore",
+    "entity.dimensionmod.vine-spirit": "vine-spirit",
+    "entity.dimensionmod.squidward":"squidward",
+    "entity.dimensionmod.zaspider":"zaspider"
 }

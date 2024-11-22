@@ -22,6 +22,8 @@
     "starts": [
       "minecraft:mineshaft",
       "minecraft:stronghold",
+      "minecraft:pillager_outpost",
+      "dimensionmod:witches_cottage_structure_feature",
       "minecraft:ruined_portal"
     ],
     "spawners": {
@@ -111,7 +113,8 @@
       [
         "minecraft:monster_room"
       ],
-      [],
+      [
+      ],
       [],
       [
         "minecraft:ore_dirt",
