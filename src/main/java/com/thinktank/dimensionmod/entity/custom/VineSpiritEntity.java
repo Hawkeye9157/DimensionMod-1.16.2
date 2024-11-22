@@ -33,31 +33,34 @@ import net.minecraft.world.server.ServerWorld;
 import javax.annotation.Nullable;
 
 
-public class VineSpiritEntity extends MonsterEntity {
-    public VineSpiritEntity(EntityType<? extends MonsterEntity> type, World worldIn) {
+public class VineSpiritEntity extends AnimalEntity {
+    public VineSpiritEntity(EntityType<? extends AnimalEntity> type, World worldIn) {
         super(type, worldIn);
     }
     public static AttributeModifierMap.MutableAttribute createAttributes() {
         return MobEntity.createMobAttributes().add(Attributes.MAX_HEALTH, 10.0d)
-                .add(Attributes.MOVEMENT_SPEED, 1.0d);
+                .add(Attributes.MOVEMENT_SPEED, 0.7d);
     }
     @Override
     public void registerGoals() {
         super.registerGoals();
-        this.goalSelector.addGoal(1, new NearestAttackableTargetGoal<>(this, PlayerEntity.class, true));
-        //this.goalSelector.addGoal(2, new ZombieAttackGoal(this, 1.0D, false));
-        this.goalSelector.addGoal(3, new WaterAvoidingRandomWalkingGoal(this, 1.0D));
+
+        this.goalSelector.addGoal(0, new SwimGoal(this));
+        this.goalSelector.addGoal(1, new PanicGoal(this, 1.25D));
+        this.goalSelector.addGoal(2, new WaterAvoidingRandomWalkingGoal(this, 1.0D));
+        this.goalSelector.addGoal(3, new LookAtGoal(this, PlayerEntity.class, 8.0F));
+        this.goalSelector.addGoal(4, new LookRandomlyGoal(this));
         this.targetSelector.addGoal(1, new HurtByTargetGoal(this));
-        this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, PlayerEntity.class, true));
-        this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, AbstractVillagerEntity.class, true));
-        this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, IronGolemEntity.class, true));
+
+
+
     }
 
     @Override
     protected int getExperienceReward(PlayerEntity player) {return 3;}
 
     @Override
-    protected SoundEvent getAmbientSound() {return SoundEvents.COW_MILK;}
+    protected SoundEvent getAmbientSound() {return SoundEvents.BELL_BLOCK;}
 
     @Override
     protected SoundEvent getDeathSound() {return SoundEvents.COW_DEATH;}

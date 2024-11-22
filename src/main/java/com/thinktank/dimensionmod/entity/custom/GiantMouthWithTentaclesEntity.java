@@ -29,8 +29,12 @@ public class GiantMouthWithTentaclesEntity extends EndermanEntity {
         super(entity, world);
     }
     public static AttributeModifierMap.MutableAttribute createAttributes() {
-        return MobEntity.createMobAttributes().add(Attributes.MAX_HEALTH, 20.0d).add(Attributes.MOVEMENT_SPEED, 0.3d)
-                .add(Attributes.ATTACK_DAMAGE,13.0d).add(Attributes.FOLLOW_RANGE,50.0d);
+        return MobEntity.createMobAttributes().add(Attributes.MAX_HEALTH, 20.0d)
+                .add(Attributes.MOVEMENT_SPEED, 0.8d)
+                .add(Attributes.ATTACK_DAMAGE,13.0d)
+                .add(Attributes.FOLLOW_RANGE,50.0d)
+                .add(Attributes.ATTACK_SPEED,0.8d)
+                .add(Attributes.ATTACK_KNOCKBACK, 2.3d);
     }
 
     @Override

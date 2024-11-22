@@ -18,8 +18,12 @@ public class ZaSpiderEntity extends SpiderEntity {
         super(p_i48550_1_, p_i48550_2_);
     }
     public static AttributeModifierMap.MutableAttribute createAttributes() {
-        return MobEntity.createMobAttributes().add(Attributes.MAX_HEALTH, 20.0d).add(Attributes.MOVEMENT_SPEED, 1.3d)
-                .add(Attributes.ATTACK_DAMAGE,13.0d);
+        return MobEntity.createMobAttributes().add(Attributes.MAX_HEALTH, 15.0d)
+                .add(Attributes.MOVEMENT_SPEED, 2.0d)
+                .add(Attributes.FOLLOW_RANGE,50.0d)
+                .add(Attributes.ATTACK_DAMAGE,10.0d)
+                .add(Attributes.ATTACK_SPEED,1.5d)
+                .add(Attributes.ATTACK_KNOCKBACK,1.5d);
     }
     @Override
     public void registerGoals() {
