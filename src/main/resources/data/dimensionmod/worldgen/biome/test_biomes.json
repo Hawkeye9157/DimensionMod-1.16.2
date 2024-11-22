@@ -1,7 +1,7 @@
 {
-    "surface_builder":  "dimensionmod:horror_surface_builder",
-    "depth": 0.125,
-    "scale": 0.05,
+    "surface_builder":  "minecraft:gravelly_mountain",
+    "depth": 1.5,
+    "scale": 0.5,
     "temperature": 0.8,
     "downfall": 0.4,
     "precipitation": "rain",
@@ -11,7 +11,7 @@
       "sky_color": 7474924,
       "fog_color": 15532660,
       "water_color": 847131,
-      "water_fog_color": 329011,
+      "water_fog_color": 847131,
       "mood_sound": {
         "sound": "minecraft:ambient.cave",
         "tick_delay": 6000,

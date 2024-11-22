@@ -33,7 +33,6 @@ import net.minecraft.world.server.ServerWorld;
 import javax.annotation.Nullable;
 
 
-
 public class VineSpiritEntity extends AnimalEntity {
     public VineSpiritEntity(EntityType<? extends AnimalEntity> type, World worldIn) {
         super(type, worldIn);
@@ -45,12 +44,14 @@ public class VineSpiritEntity extends AnimalEntity {
     @Override
     public void registerGoals() {
         super.registerGoals();
+
         this.goalSelector.addGoal(0, new SwimGoal(this));
         this.goalSelector.addGoal(1, new PanicGoal(this, 1.25D));
         this.goalSelector.addGoal(2, new WaterAvoidingRandomWalkingGoal(this, 1.0D));
         this.goalSelector.addGoal(3, new LookAtGoal(this, PlayerEntity.class, 8.0F));
         this.goalSelector.addGoal(4, new LookRandomlyGoal(this));
         this.targetSelector.addGoal(1, new HurtByTargetGoal(this));
+
 
 
     }
