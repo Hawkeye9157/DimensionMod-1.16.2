@@ -40,11 +40,18 @@ public class VineSpiritEntity extends AnimalEntity {
     }
     public static AttributeModifierMap.MutableAttribute createAttributes() {
         return MobEntity.createMobAttributes().add(Attributes.MAX_HEALTH, 10.0d)
-                .add(Attributes.MOVEMENT_SPEED, 1.0d);
+                .add(Attributes.MOVEMENT_SPEED, 0.7d);
     }
     @Override
     public void registerGoals() {
         super.registerGoals();
+        this.goalSelector.addGoal(0, new SwimGoal(this));
+        this.goalSelector.addGoal(1, new PanicGoal(this, 1.25D));
+        this.goalSelector.addGoal(2, new WaterAvoidingRandomWalkingGoal(this, 1.0D));
+        this.goalSelector.addGoal(3, new LookAtGoal(this, PlayerEntity.class, 8.0F));
+        this.goalSelector.addGoal(4, new LookRandomlyGoal(this));
+        this.targetSelector.addGoal(1, new HurtByTargetGoal(this));
+
 
     }
 
@@ -52,7 +59,7 @@ public class VineSpiritEntity extends AnimalEntity {
     protected int getExperienceReward(PlayerEntity player) {return 3;}
 
     @Override
-    protected SoundEvent getAmbientSound() {return SoundEvents.COW_MILK;}
+    protected SoundEvent getAmbientSound() {return SoundEvents.BELL_BLOCK;}
 
     @Override
     protected SoundEvent getDeathSound() {return SoundEvents.COW_DEATH;}

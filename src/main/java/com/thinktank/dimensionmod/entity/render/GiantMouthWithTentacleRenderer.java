@@ -14,7 +14,8 @@ import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.client.renderer.model.ModelRenderer;
 import net.minecraft.util.ResourceLocation;
 
-public class GiantMouthWithTentacleRenderer extends MobRenderer<GiantMouthWithTentaclesEntity, GiantMouthWithTentaclesModel<GiantMouthWithTentaclesEntity>>{
+public class GiantMouthWithTentacleRenderer extends MobRenderer<GiantMouthWithTentaclesEntity,
+        GiantMouthWithTentaclesModel<GiantMouthWithTentaclesEntity>>{
 
     protected static final ResourceLocation TEXTURE = new ResourceLocation(DimensionMod.MOD_ID,
             "textures/entity/squidward.png");
