@@ -65,10 +65,6 @@ public class ItemInit { //Initializes our custom Items
     public static final RegistryObject<Item> SAPPHIRE_BOOTS = ITEMS.register("sapphire_boots",
             () -> new SapphireArmorItem(ModArmorMaterial.SAPPHIRE, EquipmentSlotType.FEET, new Item.Properties().tab(ModCreativeTab.instance)));
 
-    //mod eggs
-    public static final RegistryObject<ModSpawnEgg> VINE_SPIRIT_EGG = ITEMS.register("vine_spirit_egg",
-            () -> new ModSpawnEgg(ModEntityType.DA_BOI,0x464f56,0x1D6336,
-                    new Item.Properties().tab(ModCreativeTab.instance)));
 
 
     //creating creative tab with our items
