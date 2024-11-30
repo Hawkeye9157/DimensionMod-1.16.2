@@ -69,7 +69,9 @@
   "starts": [
     "minecraft:mineshaft",
     "minecraft:stronghold",
-    "minecraft:ruined_portal"
+    "minecraft:ruined_portal",
+    "dimensionmod:witches_cottage_structure_feature",
+    "dimensionmod:cathedral_structure_feature"
   ],
   "spawners": {
     "monster": [
