@@ -76,16 +76,6 @@
           }
         },
         {
-          "biome": "dimensionmod:deep_lukewarm_ocean",
-          "parameters":{
-            "altitude": 1.89,
-            "humidity": 0,
-            "temperature": 0,
-            "weirdness": 0,
-            "offset": 0
-          }
-        },
-        {
           "biome": "dimensionmod:deep_warm_ocean",
           "parameters":{
             "altitude": 1.54,
@@ -156,49 +146,9 @@
           }
         },
         {
-          "biome": "dimensionmod:jungle_edge",
-          "parameters":{
-            "altitude": -1.28,
-            "humidity": 0,
-            "temperature": 0,
-            "weirdness": 0,
-            "offset": 0
-          }
-        },
-        {
-          "biome": "dimensionmod:jungle_hills",
-          "parameters":{
-            "altitude": 1.94,
-            "humidity": 0,
-            "temperature": 0,
-            "weirdness": 0,
-            "offset": 0
-          }
-        },
-        {
           "biome": "dimensionmod:lukewarm_ocean",
           "parameters":{
             "altitude": -0.89,
-            "humidity": 0,
-            "temperature": 0,
-            "weirdness": 0,
-            "offset": 0
-          }
-        },
-        {
-          "biome": "dimensionmod:modified_gravelly_mountains",
-          "parameters":{
-            "altitude": 1.67,
-            "humidity": 0,
-            "temperature": 0,
-            "weirdness": 0,
-            "offset": 0
-          }
-        },
-        {
-          "biome": "dimensionmod:modified_jungle",
-          "parameters":{
-            "altitude": -1.39,
             "humidity": 0,
             "temperature": 0,
             "weirdness": 0,
@@ -215,40 +165,11 @@
             "offset": 0
           }
         },
-        {
-          "biome": "dimensionmod:mountain_edge",
-          "parameters":{
-            "altitude": 2,
-            "humidity": 0,
-            "temperature": 0,
-            "weirdness": 0,
-            "offset": 0
-          }
-        },
+
         {
           "biome": "dimensionmod:mountains",
           "parameters":{
             "altitude": -0.76,
-            "humidity": 0,
-            "temperature": 0,
-            "weirdness": 0,
-            "offset": 0
-          }
-        },
-        {
-          "biome": "dimensionmod:mushroom_field_shore",
-          "parameters":{
-            "altitude": -1.73,
-            "humidity": 0,
-            "temperature": 0,
-            "weirdness": 0,
-            "offset": 0
-          }
-        },
-        {
-          "biome": "dimensionmod:mushroom_fields",
-          "parameters":{
-            "altitude": 1.69,
             "humidity": 0,
             "temperature": 0,
             "weirdness": 0,
@@ -266,9 +187,9 @@
           }
         },
         {
-          "biome": "dimensionmod:plains",
+          "biome": "dimensionmod:shattered_savanna",
           "parameters":{
-            "altitude": -1.43,
+            "altitude": -1.15,
             "humidity": 0,
             "temperature": 0,
             "weirdness": 0,
@@ -276,237 +197,35 @@
           }
         },
         {
-          "biome": "dimensionmod:river",
-          "parameters":{
-            "altitude": 1.54,
-            "humidity": -1.43,
-            "temperature": 1,
-            "weirdness": 0.4,
-            "offset": 0.4
-          }
-        },
-        {
-          "biome": "dimensionmod:savanna",
-          "parameters":{
-            "altitude": -1.24,
-            "humidity": 1.65,
-            "temperature": 1.23,
-            "weirdness": 0.4,
-            "offset": 0.0
-          }
-        },
-        {
-          "biome": "dimensionmod:savanna_plateau",
-          "parameters":{
-            "altitude": -1.84,
-            "humidity": 1,
-            "temperature": 1,
-            "weirdness": 0.4,
-            "offset": 0.34
-          }
-        },
-        {
-          "biome": "dimensionmod:shattered_savanna",
-          "parameters":{
-            "altitude": 2,
-            "humidity": 1,
-            "temperature": 1,
-            "weirdness": 0.4,
-            "offset": 0.34
-          }
-        },
-        {
           "biome": "dimensionmod:shattered_savanna_plateau",
           "parameters":{
-            "altitude": 2,
-            "humidity": 1,
-            "temperature": 1,
-            "weirdness": 0.4,
-            "offset": 0.34
-          }
-        },
-        {
-          "biome": "dimensionmod:snowy_beach",
-          "parameters":{
-            "altitude": 2,
-            "humidity": 1,
-            "temperature": 1,
-            "weirdness": 0.4,
-            "offset": 0.34
-          }
-        },
-        {
-          "biome": "dimensionmod:snowy_mountains",
-          "parameters":{
-            "altitude": 2,
-            "humidity": 1,
-            "temperature": 1,
-            "weirdness": 0.4,
-            "offset": 0.34
-          }
-        },
-        {
-          "biome": "dimensionmod:snowy_taiga",
-          "parameters":{
-            "altitude": 2,
-            "humidity": 1,
-            "temperature": 1,
-            "weirdness": 0.4,
-            "offset": 0.34
-          }
-        },
-        {
-          "biome": "dimensionmod:snowy_taiga_hills",
-          "parameters":{
-            "altitude": 2,
-            "humidity": 1,
-            "temperature": 1,
-            "weirdness": 0.4,
-            "offset": 0.34
-          }
-        },
-        {
-          "biome": "dimensionmod:snowy_taiga_mountains",
-          "parameters":{
-            "altitude": 2,
-            "humidity": 1,
-            "temperature": 1,
-            "weirdness": 0.4,
-            "offset": 0.34
-          }
-        },
-        {
-          "biome": "dimensionmod:snowy_tundra",
-          "parameters":{
-            "altitude": 2,
-            "humidity": 1,
-            "temperature": 1,
-            "weirdness": 0.4,
-            "offset": 0.34
-          }
-        },
-        {
-          "biome": "dimensionmod:stone_shore",
-          "parameters":{
-            "altitude": 2,
-            "humidity": 1,
-            "temperature": 1,
-            "weirdness": 0.4,
-            "offset": 0.34
-          }
-        },
-        {
-          "biome": "dimensionmod:sunflower_plains",
-          "parameters":{
-            "altitude": 2,
-            "humidity": 1,
-            "temperature": 1,
-            "weirdness": 0.4,
-            "offset": 0.34
-          }
-        },
-
-        {
-          "biome": "dimensionmod:swamp_hills",
-          "parameters":{
-            "altitude": 2,
-            "humidity": 1,
-            "temperature": 1,
-            "weirdness": 0.4,
-            "offset": 0.34
-          }
-        },
-        {
-          "biome": "dimensionmod:taiga",
-          "parameters":{
-            "altitude": 2,
-            "humidity": 1,
-            "temperature": 1,
-            "weirdness": 0.4,
-            "offset": 0.34
+            "altitude": -1.08,
+            "humidity": 0,
+            "temperature": 0,
+            "weirdness": 0,
+            "offset": 0
           }
         },
         {
           "biome": "dimensionmod:taiga_hills",
           "parameters":{
-            "altitude": 2,
-            "humidity": 1,
-            "temperature": 1,
-            "weirdness": 0.4,
-            "offset": 0.34
+            "altitude": 1.67,
+            "humidity": 1.34,
+            "temperature": 0,
+            "weirdness": 0,
+            "offset": 0
           }
         },
         {
           "biome": "dimensionmod:taiga_mountains",
           "parameters":{
-            "altitude": 2,
-            "humidity": 1,
-            "temperature": 1,
-            "weirdness": 0.4,
-            "offset": 0.34
-          }
-        },
-        {
-          "biome": "dimensionmod:tall_birch_forest",
-          "parameters":{
-            "altitude": 2,
-            "humidity": 1,
-            "temperature": 1,
-            "weirdness": 0.4,
-            "offset": 0.34
-          }
-        },
-        {
-          "biome": "dimensionmod:tall_birch_hills",
-          "parameters":{
-            "altitude": 2,
-            "humidity": 1,
-            "temperature": 1,
-            "weirdness": 0.4,
-            "offset": 0.34
-          }
-        },
-        {
-          "biome": "dimensionmod:warm_ocean",
-          "parameters":{
-            "altitude": 2,
-            "humidity": 1,
-            "temperature": 1,
-            "weirdness": 0.4,
-            "offset": 0.34
-          }
-        },
-        {
-          "biome": "dimensionmod:wooded_badlands_plateau",
-          "parameters":{
-            "altitude": 2,
-            "humidity": 1,
-            "temperature": 1,
-            "weirdness": 0.4,
-            "offset": 0.34
-          }
-        },
-        {
-          "biome": "dimensionmod:wooded_hills",
-          "parameters":{
-            "altitude": 2,
-            "humidity": 1,
-            "temperature": 1,
-            "weirdness": 0.4,
-            "offset": 0.34
-          }
-        },
-        {
-          "biome": "dimensionmod:wooded_mountains",
-          "parameters":{
-            "altitude": 2,
-            "humidity": 1,
-            "temperature": 1,
-            "weirdness": 0.4,
-            "offset": 0.34
+            "altitude": 1.38,
+            "humidity": 1.26,
+            "temperature": 0,
+            "weirdness": 0,
+            "offset": 0
           }
         }
-
       ],
       "altitude_noise": {
         "firstOctave": -7,
