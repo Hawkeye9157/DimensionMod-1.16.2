@@ -121,6 +121,27 @@
         "minCount": 1,
         "maxCount": 4
       },
+
+      {
+        "type": "dimensionmod:vinespirit",
+        "weight" : 10,
+        "minCount": 1,
+        "maxCount": 1
+      },
+      {
+        "type": "dimensionmod:squidward",
+        "weight" : 10,
+        "minCount": 1,
+        "maxCount": 3
+      },
+      {
+        "type": "dimensionmod:zaspider",
+        "weight" : 10,
+        "minCount": 1,
+        "maxCount": 4
+      },
+
+
       {
         "type": "minecraft:witch",
         "weight": 5,
