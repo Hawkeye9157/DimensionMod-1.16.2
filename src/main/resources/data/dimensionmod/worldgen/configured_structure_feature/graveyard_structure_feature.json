@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:igloo",
+  "config": {
+    "start_pool": "dimensionmod:graveyard",
+    "size": 2
+  }
+}

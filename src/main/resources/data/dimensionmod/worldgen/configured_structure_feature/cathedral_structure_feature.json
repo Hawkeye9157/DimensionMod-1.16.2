@@ -2,6 +2,6 @@
   "type": "minecraft:village",
   "config": {
     "start_pool": "dimensionmod:cathedral_start",
-    "size": 7
+    "size": 4
   }
 }

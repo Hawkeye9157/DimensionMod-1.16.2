@@ -10,6 +10,15 @@
         "location": "dimensionmod:witches_cottage",
         "processors": "minecraft:empty"
       }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dimensionmod:graveyard",
+        "element_type": "minecraft:single_pool_element",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      }
     }
   ]
 }

@@ -1,0 +1,7 @@
+{
+  "name": "graveyard",
+  "fallback": "minecraft:empty",
+  "elements": [
+
+  ]
+}
