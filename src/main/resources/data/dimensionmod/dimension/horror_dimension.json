@@ -1,19 +1,264 @@
-
 {
   "type": "dimensionmod:horror_dimensiontype",
   "generator": {
-    "type": "minecraft:flat",
-    "settings": {
-      "biome": "minecraft:plains",
-      "layers": [
+    "biome_source": {
+      "seed": 0,
+      "type": "minecraft:multi_noise",
+      "biomes": [
         {
-          "block": "dimensionmod:maple",
-          "height": 64
+          "biome": "dimensionmod:birch_forest_hills",
+          "parameters":{
+            "altitude": 0,
+            "humidity": 0,
+            "temperature": 0,
+            "weirdness": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "dimensionmod:river",
+          "parameters":{
+            "altitude": -0.25,
+            "humidity": 0,
+            "temperature": 0,
+            "weirdness": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "dimensionmod:birch_forest",
+          "parameters":{
+            "altitude": -0.5,
+            "humidity": 0,
+            "temperature": 0,
+            "weirdness": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "dimensionmod:giant_spruce_taiga",
+          "parameters":{
+            "altitude": 0.25,
+            "humidity": 0,
+            "temperature": 0,
+            "weirdness": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "dimensionmod:deep_ocean",
+          "parameters":{
+            "altitude": 1,
+            "humidity": 0,
+            "temperature": 0,
+            "weirdness": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "dimensionmod:forest",
+          "parameters":{
+            "altitude": 0.45,
+            "humidity": 0,
+            "temperature": 0,
+            "weirdness": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "dimensionmod:deep_lukewarm_ocean",
+          "parameters":{
+            "altitude": 1.32,
+            "humidity": 0,
+            "temperature": 1,
+            "weirdness": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "dimensionmod:deep_warm_ocean",
+          "parameters":{
+            "altitude": 1.54,
+            "humidity": 0,
+            "temperature": 0,
+            "weirdness": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "dimensionmod:flower_forest",
+          "parameters":{
+            "altitude": 0.56,
+            "humidity": 0,
+            "temperature": 0,
+            "weirdness": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "dimensionmod:giant_spruce_taiga_hills",
+          "parameters":{
+            "altitude": 0.78,
+            "humidity": 0,
+            "temperature":0 ,
+            "weirdness": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "dimensionmod:giant_tree_taiga",
+          "parameters":{
+            "altitude": 0.98,
+            "humidity": 0,
+            "temperature": 0,
+            "weirdness": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "dimensionmod:giant_tree_taiga_hills",
+          "parameters":{
+            "altitude": 1.05,
+            "humidity": 0,
+            "temperature": 0,
+            "weirdness": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "dimensionmod:gravelly_mountains",
+          "parameters":{
+            "altitude": -0.78,
+            "humidity": 0,
+            "temperature": 0,
+            "weirdness": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "dimensionmod:jungle",
+          "parameters":{
+            "altitude": 1.23,
+            "humidity": 0,
+            "temperature": 0,
+            "weirdness": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "dimensionmod:lukewarm_ocean",
+          "parameters":{
+            "altitude": -0.89,
+            "humidity": 0,
+            "temperature": 0,
+            "weirdness": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "dimensionmod:modified_jungle_edge",
+          "parameters":{
+            "altitude": -1.17,
+            "humidity": 0,
+            "temperature": 0,
+            "weirdness": 0,
+            "offset": 0
+          }
+        },
+
+        {
+          "biome": "dimensionmod:mountains",
+          "parameters":{
+            "altitude": -0.76,
+            "humidity": 0,
+            "temperature": 0,
+            "weirdness": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "dimensionmod:ocean",
+          "parameters":{
+            "altitude": 1.45,
+            "humidity": 0,
+            "temperature": 0,
+            "weirdness": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "dimensionmod:shattered_savanna",
+          "parameters":{
+            "altitude": -1.15,
+            "humidity": 0,
+            "temperature": 0,
+            "weirdness": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "dimensionmod:shattered_savanna_plateau",
+          "parameters":{
+            "altitude": -1.08,
+            "humidity": 0,
+            "temperature": 0,
+            "weirdness": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "dimensionmod:taiga_hills",
+          "parameters":{
+            "altitude": 1.67,
+            "humidity": 1.34,
+            "temperature": 0,
+            "weirdness": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "dimensionmod:taiga_mountains",
+          "parameters":{
+            "altitude": 1.38,
+            "humidity": 1.26,
+            "temperature": 0,
+            "weirdness": 0,
+            "offset": 0
+          }
         }
       ],
-      "structures": {
-        "structures": {}
+      "altitude_noise": {
+        "firstOctave": -7,
+        "amplitudes": [
+          1.0,
+          1.0
+        ]
+      },
+      "humidity_noise": {
+        "firstOctave": -7,
+        "amplitudes": [
+          1.0,
+          1.0
+        ]
+      },
+      "temperature_noise": {
+        "firstOctave": -7,
+        "amplitudes": [
+          1.0,
+          1.0
+        ]
+      },
+      "weirdness_noise": {
+        "firstOctave": -7,
+        "amplitudes": [
+          1.0,
+          1.0
+        ]
       }
-    }
+    },
+    "seed": 0,
+    "settings": "minecraft:overworld",
+
+    "type": "minecraft:noise"
   }
 }
