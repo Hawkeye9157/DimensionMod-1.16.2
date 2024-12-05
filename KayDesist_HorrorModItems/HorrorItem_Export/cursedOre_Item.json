@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "cursedOre_item_texture",
-		"particle": "cursedOre_item_texture"
+		"0": "HorrorItem_Texture/cursedOre_item_texture",
+		"particle": "HorrorItem_Texture/cursedOre_item_texture"
 	},
 	"elements": [
 		{
