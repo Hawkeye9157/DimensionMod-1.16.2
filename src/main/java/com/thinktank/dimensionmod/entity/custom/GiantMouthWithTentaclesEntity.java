@@ -58,15 +58,5 @@ public class GiantMouthWithTentaclesEntity extends EndermanEntity {
     protected void playStepSound(BlockPos pos, BlockState state) {
         this.playSound(SoundEvents.COW_STEP, 0.15F, 1.0F);
     }
-    @Override
-    public boolean doHurtTarget(Entity entity) {
-        if(!super.doHurtTarget(entity)) return false;
-        else {
-            if(entity instanceof LivingEntity) {
 
-            }
-            return true;
-        }
-
-    }
 }

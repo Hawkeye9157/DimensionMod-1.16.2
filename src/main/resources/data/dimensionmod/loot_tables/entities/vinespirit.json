@@ -6,13 +6,13 @@
                 {
                     "type": "item",
                     "weight":1,
-                    "name": "dimensionmod:nail",
+                    "name": "dimensionmod:cursed_sapphire",
                     "functions": [
                         {
                             "function": "set_count",
                             "count":{
                                 "min":1,
-                                "max":3 
+                                "max":1 
                             }
                         }
                     ]
